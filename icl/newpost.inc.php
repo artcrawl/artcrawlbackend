@@ -5,7 +5,7 @@ function newpost(){
 	$createdate=time();
 	$userid=POSTVAL('userid');
 	$price=POSTVAL('price');
-	$price=(!$price)?:$price;
+	$price=round((!$price)?:$price, 2);
 	$likes=0;
 	$geolat=POSTVAL('geolat');
 	$geolong=POSTVAL('geolong');
